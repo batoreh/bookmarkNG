@@ -1,0 +1,80 @@
+body {
+  background: url('https://s3.amazonaws.com/StartupStockPhotos/uploads/42.jpg');
+}
+a {
+  text-decoration: none;
+  color: #00a9ff;
+}
+.cards-list {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.card-link {
+  position: relative;
+  display: block;
+  min-width: 250px;
+  min-height: 100px;
+  background-color: #ddd;
+  border-radius: 2px;
+  font-family: Helvetica;
+  padding: 5px 40px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px 2px #999;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+.card-link:hover {
+  box-shadow: 0px 0px 10px 2px #bbb;
+}
+.card-link > .img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 50%;
+  z-index: -1;
+}
+.edit-toggle {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 20px;
+  padding-top: 10px;
+}
+.edit-toggle .circle {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #005289;
+  margin: 1px;
+  float: left;
+}
+.edit-toggle:hover > .edit-container {
+  display: block;
+}
+.edit-container {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  display: none;
+  width: 200px;
+  background-color: whitesmoke;
+  list-style: none;
+  padding: 0px;
+  z-index: 999;
+}
+.edit-container .item {
+  padding: 15px 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.edit-container .item:hover {
+  background-color: #005289;
+}
