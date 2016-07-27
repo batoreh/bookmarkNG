@@ -1,6 +1,10 @@
+html{
+  height: 100%;
+}
 body {
   background: url('https://s3.amazonaws.com/StartupStockPhotos/uploads/42.jpg');
   font-family: 'Slabo 27px', serif;
+  height: 101%
 }
 a {
   text-decoration: none;
@@ -40,8 +44,8 @@ p{
 .list{
   position: absolute;
   display: none;
-  top: 30px;
-  left: 10px;
+  top: 40px;
+  left: 0px;
   background-color: rgba(0,0,0, .9);
   width: 300px;
   border-radius: 5px;
